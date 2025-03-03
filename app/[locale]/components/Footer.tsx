@@ -81,11 +81,11 @@ const Footer = () => {
             </p>
             <p className="flex items-center justify-center md:justify-start"> {/* Center on mobile, left on larger screens */}
               <MdEmail className="mr-2 text-gray-500 text-xl" />
-              <a href="mailto:Intaj.StarsTechnology@outlook.com" className="hover:text-blue-400 transition-colors duration-200">info@intajstarstech.com</a>
+              <a href="mailto:info@intajstarstech.com" className="hover:text-blue-400 transition-colors duration-200">info@intajstarstech.com</a>
             </p>
             <p className="flex items-center justify-center md:justify-start"> {/* Center on mobile, left on larger screens */}
               <MdPhone className="mr-2 text-gray-500 text-xl" />
-              <a href="tel:+96892201203" className="hover:text-blue-400 transition-colors duration-200">+968 93534933</a>
+              <a href="tel:+96893534933" className="hover:text-blue-400 transition-colors duration-200">+968 93534933</a>
             </p>
           </div>
         </div>
