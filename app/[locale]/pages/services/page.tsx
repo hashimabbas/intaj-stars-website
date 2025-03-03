@@ -1,11 +1,9 @@
 import React from 'react'
-import HeroSection from '../../components/hero'
 import { OurServices } from '../../components/OurServices'
 
 const page = () => {
   return (
-    <div>
-      <HeroSection />
+    <div className='mt-24'>
       <OurServices />
     </div>
   )

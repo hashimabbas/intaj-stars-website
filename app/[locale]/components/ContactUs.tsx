@@ -17,6 +17,9 @@ const ContactUs = () => {
 
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <h1 className="text-4xl text-center p-10 lg:text-5xl font-extrabold  text-gray-900  dark:text-gray-100 mb-4">
+        Contact Us
+      </h1>
       <div className="container mx-auto px-4">
         <div className="lg:flex lg:items-center lg:justify-between lg:gap-12">
           {/* Left Side (Contact Form - Placeholder) */}

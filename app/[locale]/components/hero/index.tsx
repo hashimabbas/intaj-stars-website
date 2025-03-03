@@ -37,7 +37,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 5, }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}>
-          <ShinyButton>Contact Us</ShinyButton>
+          <a href='https://wa.me/96893534933' target='_blank' ><ShinyButton>Contact Us</ShinyButton></a>
         </motion.div>
       </div>
       <HeroParticle />

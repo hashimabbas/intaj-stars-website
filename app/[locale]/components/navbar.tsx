@@ -34,18 +34,18 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-20 p-5 sm:p-0 ${bgColor} transition-colors duration-300`}>
-      <div className="max-w-7xl h-32 mx-auto flex items-center justify-between sm:relative">
+      <div className="max-w-7xl mx-auto flex items-center justify-between sm:relative">
         {/* Logo Section */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src={theme === 'light' ? logoLight : logoDark}
+            src={"/logo-removebg-preview.png"}
             alt="Intaj Stars Logo"
             width={100}   // Adjust as needed
             height={100}  // Adjust as needed
             className="rounded-full"  // Optional: Make the logo rounded
             priority
           />
-          <span className={`font-bold text-lg ${textColor}`}>Intaj Stars</span>
+          <span className={`font-bold text-sm ${textColor}`}>Intaj Stars Technology</span>
         </Link>
 
         {/* Hamburger Menu Icon */}

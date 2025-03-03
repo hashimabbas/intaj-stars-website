@@ -14,9 +14,9 @@ const ECommerce = () => {
           <p className="text-gray-600 dark:text-gray-400 lg:text-lg mb-8">
             Unlock your online potential with our tailored e-commerce website packages.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">
+          <a href='https://wa.me/96893534933' target='_blank' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">
             Contact Us
-          </button>
+          </a>
         </section>
 
         {/* Package Cards */}
@@ -59,9 +59,9 @@ const ECommerce = () => {
               </p>
             </div>
             <div className="bg-gray-100 dark:bg-gray-700 p-4 text-center">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a href='https://wa.me/96893534933' target='_blank' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
                 Choose Bronze
-              </button>
+              </a>
             </div>
           </div>
 
@@ -102,9 +102,9 @@ const ECommerce = () => {
               </p>
             </div>
             <div className="bg-gray-100 dark:bg-gray-700 p-4 text-center">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a href='https://wa.me/96893534933' target='_blank' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
                 Choose Silver
-              </button>
+              </a>
             </div>
           </div>
 
@@ -146,9 +146,9 @@ const ECommerce = () => {
               </p>
             </div>
             <div className="bg-gray-100 dark:bg-gray-700 p-4 text-center">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a href='https://wa.me/96893534933' target='_blank' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
                 Choose Gold
-              </button>
+              </a>
             </div>
           </div>
 

@@ -15,7 +15,7 @@ interface ServiceProps {
 
 const ServiceCard: React.FC<ServiceProps> = ({ imageSrc, title, description, link, _id }) => {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+    <div className="bg-white mt-24 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
       <Image
         src={imageSrc}
         alt={title}
