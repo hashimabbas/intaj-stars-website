@@ -33,16 +33,16 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/medical-systems" className="hover:text-blue-400 transition-colors duration-200 block">Medical Systems</Link>
+              <Link href="/pages/services/e-commerce" className="hover:text-blue-400 transition-colors duration-200 block">E-commerce Store</Link>
             </li>
             <li>
-              <Link href="/e-commerce" className="hover:text-blue-400 transition-colors duration-200 block">E-commerce Solutions</Link>
+              <Link href="/pages/services/web-development" className="hover:text-blue-400 transition-colors duration-200 block">Web Development</Link>
             </li>
             <li>
-              <Link href="/accounting" className="hover:text-blue-400 transition-colors duration-200 block">Accounting Systems</Link>
+              <Link href="/pages/services/mobile-app-development" className="hover:text-blue-400 transition-colors duration-200 block">Mobile App</Link>
             </li>
             <li>
-              <Link href="/web-development" className="hover:text-blue-400 transition-colors duration-200 block">Web Development</Link>
+              <Link href="/pages/services/POS" className="hover:text-blue-400 transition-colors duration-200 block">POS Hardware and Software</Link>
             </li>
           </ul>
         </div>
@@ -55,17 +55,17 @@ const Footer = () => {
               <Link href="/" className="hover:text-blue-400 transition-colors duration-200 block">Home</Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-blue-400 transition-colors duration-200 block">About Us</Link>
+              <Link href="/pages/services" className="hover:text-blue-400 transition-colors duration-200 block">Our Services</Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-blue-400 transition-colors duration-200 block">Contact Us</Link>
+              <Link href="/pages/contact-us" className="hover:text-blue-400 transition-colors duration-200 block">Contact Us</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/privacy-policy" className="hover:text-blue-400 transition-colors duration-200 block">Privacy Policy</Link>
             </li>
             <li>
               <Link href="/terms-of-service" className="hover:text-blue-400 transition-colors duration-200 block">Terms of Service</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
