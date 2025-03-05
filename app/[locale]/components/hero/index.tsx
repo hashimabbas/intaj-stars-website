@@ -45,17 +45,18 @@ const HeroSection = () => {
       <div className='absolute bottom-0 w-full'>
         <Marquee pauseOnHover
           className='[--duration:20s] max-w-7xl mx-auto'>
-          <h1>Specilet Meical Softwear</h1>
-          <h1>Medical Device integration</h1>
-          <h1>Analytic platform</h1>
-          <h1> Ai softwear</h1>
-          <h1> ERP System</h1>
-          <h1> Payment solutions</h1>
-          <h1> Chat bot</h1>
-          <h1> Mobile App</h1>
-          <h1> Ecommrce store</h1>
-          <h1> Customer support Software</h1>
-          <h1> POS Hardwaer And Softwear</h1>
+          <h1>Specific Medical Software</h1>
+          <h1>Medical Device Integration</h1>
+          <h1>Analytics Platform</h1>
+          <h1>AI Software</h1>
+          <h1>ERP System</h1>
+          <h1>Payment Solutions</h1>
+          <h1>Chatbot</h1>
+          <h1>Mobile App</h1>
+          <h1>E-commerce Store</h1>
+          <h1>Customer Support Software</h1>
+          <h1>POS Hardware and Software</h1>
+
         </Marquee>
       </div>
     </div>
