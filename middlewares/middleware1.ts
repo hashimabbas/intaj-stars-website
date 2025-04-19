@@ -1,4 +1,4 @@
-//middleware1.ts
+//middlewares/middleware1.ts
 import { NextFetchEvent, NextRequest, NextResponse } from "next/server";
 
 import { getToken } from "next-auth/jwt";

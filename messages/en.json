@@ -1,0 +1,430 @@
+{
+  "heroSection": {
+    "title": "Intaj Stars Technology.Inc",
+    "subtitle": "Driving progress through cutting-edge technology.",
+    "contactButton": "Contact Us",
+    "marqueeItem1": "Specific Medical Software",
+    "marqueeItem2": "Medical Device Integration",
+    "marqueeItem3": "Analytics Platform",
+    "marqueeItem4": "AI Software",
+    "marqueeItem5": "ERP System",
+    "marqueeItem6": "Payment Solutions",
+    "marqueeItem7": "Chatbot",
+    "marqueeItem8": "Mobile App",
+    "marqueeItem9": "E-commerce Store",
+    "marqueeItem10": "Customer Support Software",
+    "marqueeItem11": "POS Hardware and Software"
+  },
+  "navbar": {
+    "intajStarsTechnology": "Intaj Stars Technology",
+    "home": "Home",
+    "services": "Services",
+    "contactUs": "Contact Us",
+    "intajStarsLogo": "Intaj Stars Logo",
+    "toggleMenu": "Toggle navigation menu",
+    "toggleDarkMode": "Toggle dark mode"
+  },
+  "visionMission": {
+    "heading": "About Our Company",
+    "tabAbout": "About",
+    "tabMission": "Mission",
+    "tabVision": "Vision",
+    "aboutContent": "We are a leading technology company based in Oman, dedicated to providing innovative solutions for our clients. We leverage cutting-edge technologies to empower businesses and drive growth in the region.",
+    "missionContent": "Our mission is to empower businesses in Oman with transformative technology solutions. We strive to deliver exceptional value, build lasting partnerships, and contribute to the technological advancement of the region.",
+    "visionContent": "To be the leading technology partner in Oman, recognized for our innovation, excellence, and commitment to client success. We aim to shape the future of technology in the region.",
+    "logoAlt": "Company Logo"
+  },
+  "valuesSection": {
+    "heading": "Our Core Values",
+    "value1Title": "Innovation",
+    "value1Description": "We embrace a culture of continuous innovation, pushing boundaries to develop groundbreaking solutions.",
+    "value1Alt": "Innovation Icon",
+    "value2Title": "Integrity",
+    "value2Description": "We operate with unwavering integrity, building trust through transparency and ethical practices.",
+    "value2Alt": "Integrity Icon",
+    "value3Title": "Collaboration",
+    "value3Description": "We foster a collaborative spirit, working together to achieve shared goals and create exceptional value.",
+    "value3Alt": "Collaboration Icon"
+  },
+  "ourCustomers": {
+    "heading": "Our Customers",
+    "tabMedical": "Medical",
+    "tabEcommerce": "E-commerce",
+    "tabPOS": "POS",
+    "customerLogoAlt": "Logo of {customerName}",
+    "countryFlagAlt": "{countryCode} Flag",
+    "scrollPreviousLabel": "Scroll previous customers",
+    "scrollNextLabel": "Scroll next customers"
+  },
+  "ourServices": {
+    "heading": "Our Services",
+    "moreButton": "More",
+    "loading": "Loading",
+    "fetchError": "Error loading services"
+  },
+  "specializedMedicalSoftware": {
+    "heroTitle": "Advanced Specialized Medical Software Solutions",
+    "heroDescription": "Developing tailored, compliant, and innovative software solutions for the complex needs of the healthcare sector.",
+    "expertiseTitle": "Our Areas of Expertise",
+    "areaHIS": "HIS (Hospital Information System)",
+    "areaEMR": "EMR/EHR",
+    "areaOutpatient": "Outpatient Clinics Management",
+    "areaLIS": "LIS (Laboratory Information System)",
+    "areaIntegration": "Medical Devices Integration",
+    "areaRIS": "RIS (Radiology Information System)",
+    "areaPharmacy": "Pharmacy System",
+    "areaAI": "AI Module",
+    "descriptionHIS": "Comprehensive system managing all hospital administrative, financial, and clinical aspects.",
+    "descriptionEMR": "Digital versions of patient charts for streamlined data access and care coordination.",
+    "descriptionOutpatient": "Software for managing appointments, billing, and patient records in outpatient settings.",
+    "descriptionLIS": "Manages laboratory data, tests, results, and integration with other systems.",
+    "descriptionIntegration": "Connects various medical devices to EHR/HIS for seamless data flow.",
+    "descriptionRIS": "Manages radiology imaging, scheduling, results reporting, and image archiving (PACS integration).",
+    "descriptionPharmacy": "Handles medication dispensing, inventory, prescriptions, and interactions.",
+    "descriptionAI": "Utilizes Artificial Intelligence for diagnostics support, predictive analytics, and operational efficiency."
+  },
+  "mobileAppDevelopment": {
+    "heroTitle": "Mobile App Development by Intaj Stars",
+    "heroDescription": "Transforming ideas into intuitive and powerful mobile experiences for iOS and Android.",
+    "inquiryTitle": "Inquiry Applications",
+    "inquiryDescription": "Engage your audience with informative and interactive inquiry-based apps. Ideal for lead generation, market research, and educational purposes.",
+    "inquiryAltText": "Man holding a smartphone showing an inquiry app interface.",
+    "inquiryList": [
+      "Interactive Questionnaires & Surveys",
+      "Data Collection & Analytics",
+      "User-Friendly Interface",
+      "Multi-Platform Support (iOS & Android)",
+      "Push Notifications for Engagement",
+      "Real-time Feedback & Reporting"
+    ],
+    "functionalTitle": "Functional Applications",
+    "functionalDescription": "Empower your users with feature-rich functional apps designed to solve specific problems and enhance productivity. Custom solutions for business, e-commerce, utilities, and more.",
+    "functionalAltText": "Smartphone screen displaying a functional utility application.",
+    "functionalList": [
+      "Customized Features & Workflows",
+      "Secure Data Handling & Authentication",
+      "API Integration for Enhanced Functionality",
+      "Offline Access & Data Synchronization",
+      "Push Notifications & Real-time Updates",
+      "Scalable & Maintainable Architecture"
+    ],
+    "techTitle": "Technologies We Use",
+    "approachTitle": "Our Mobile App Development Approach",
+    "approachSteps": [
+      {
+        "term": "Discovery",
+        "desc": "Define your app concept, target audience, and business objectives."
+      },
+      {
+        "term": "Planning",
+        "desc": "Detailed feature specifications, UI/UX design, and technology selection."
+      },
+      {
+        "term": "Design",
+        "desc": "Wireframing, prototyping, and visual design to create an engaging user experience."
+      },
+      {
+        "term": "Development",
+        "desc": "Agile development process with continuous integration and testing."
+      },
+      {
+        "term": "Testing",
+        "desc": "Rigorous testing on multiple devices and operating systems."
+      },
+      {
+        "term": "Deployment",
+        "desc": "App store submission and launch support."
+      },
+      {
+        "term": "Maintenance",
+        "desc": "Ongoing support, updates, and performance optimization."
+      }
+    ]
+  },
+  "webDevelopment": {
+    "heroTitle": "Elevate Your Business with Intaj Stars Web Development",
+    "heroDescription": "Crafting digital experiences that drive results, leveraging the latest technologies and creative design.",
+    "customWebTitle": "Custom Website Development",
+    "customWebDescription": "Bespoke websites tailored to your business needs, reflecting your brand identity. Responsive, performant, and SEO-friendly.",
+    "customWebAltText": "Laptop screen showing website code and design elements.",
+    "customWebList": [
+      "Responsive & Aesthetic Design",
+      "SEO optimization & Analytics",
+      "Real-Time Updates with WebSockets",
+      "Fast loading speeds",
+      "Efficient Data & Content Management",
+      "Enhanced Security & Data Protection",
+      "Intuitive User Experience (UX)",
+      "API Integration & Automation"
+    ],
+    "webAppTitle": "Web Application Development",
+    "webAppDescription": "Robust and scalable web applications for diverse business needs. Custom CRM, project management, and data analysis tools.",
+    "webAppAltText": "Diagram illustrating web application architecture.",
+    "webAppList": [
+      "Customized features and functionality",
+      "Scalable & Secure Architecture",
+      "Intuitive and User-Friendly Design",
+      "API Integration for Enhanced Functionality"
+    ],
+    "techTitle": "Technologies We Use",
+    "approachTitle": "Our Collaborative Approach",
+    "approachSteps": [
+      {
+        "term": "Discovery",
+        "desc": "Deep dive into your business, goals, and target audience."
+      },
+      {
+        "term": "Planning",
+        "desc": "Meticulous project scoping, feature definition, and timeline creation."
+      },
+      {
+        "term": "Design",
+        "desc": "User-centric design, visually appealing, and aligned with your brand."
+      },
+      {
+        "term": "Development",
+        "desc": "Agile development, leveraging the right technologies for performance."
+      },
+      {
+        "term": "Testing",
+        "desc": "Rigorous testing across devices to ensure a seamless experience."
+      },
+      {
+        "term": "Deployment",
+        "desc": "Smooth launch and integration with your existing systems."
+      },
+      {
+        "term": "Maintenance",
+        "desc": "Ongoing support, updates, and optimization for long-term success."
+      }
+    ]
+  },
+  "ecommerce": {
+    "heroTitle": "E-Commerce Solutions by Intaj Stars",
+    "heroDescription": "Unlock your online potential with our tailored e-commerce website packages.",
+    "heroContactButton": "Contact Us",
+
+    "bronzePackage": {
+      "title": "Bronze Package",
+      "pricePrefix": "Starting from",
+      "price": "250",
+      "currency": "OMR",
+      "features": [
+        "Dynamic website (including CMS for content management)",
+        "Modern and attractive design",
+        "Home page with image slider, company intro, and featured products",
+        "About Us page",
+        "Contact Us page with form",
+        "Responsive design for all devices",
+        "Payment gateway integration (e.g., from Amana.net)",
+        "Bilingual (Arabic and English)",
+        "Modern section design",
+        "Domain name registration (.com, .net, .org)",
+        "Hosting plan (official email) on US servers",
+        "SSL certificate",
+        "Android web application",
+        "Email notification system for customer and merchant",
+        "Improved main section design",
+        "SEO optimization",
+        "WhatsApp notification feature for admin",
+        "3 months of technical support"
+      ],
+      "deliveryTime": "Website design within 1 month from receiving complete data.",
+      "renewalInfo": "Annual renewal (hosting and domain):",
+      "renewalPrice": "55",
+      "renewalResponsibility": "(responsibility of the store owner)",
+      "chooseButton": "Choose Bronze"
+    },
+
+    "silverPackage": {
+      "title": "Silver Package",
+      "pricePrefix": "Starting from",
+      "price": "350",
+      "currency": "OMR",
+      "features": [
+        "Dynamic website (including CMS for content management)",
+        "Modern and attractive design",
+        "Home page with image slider, company intro, and featured products",
+        "About Us page",
+        "Contact Us page with form",
+        "Responsive design for all devices",
+        "Payment gateway integration (e.g., from Amana.net)",
+        "Bilingual (Arabic and English)",
+        "Modern section design",
+        "Domain name registration (.com, .net, .org)",
+        "Hosting plan (official email) on US servers",
+        "SSL certificate",
+        "Android web application",
+        "Email notification system for customer and merchant",
+        "Improved main section design",
+        "SEO optimization",
+        "WhatsApp notification feature for admin",
+        "6 months of technical support"
+      ],
+      "deliveryTime": "Website design within 1 month from receiving complete data.",
+      "renewalInfo": "Annual renewal (hosting and domain):",
+      "renewalPrice": "65",
+      "renewalResponsibility": "(responsibility of the store owner)",
+      "chooseButton": "Choose Silver"
+    },
+
+    "goldPackage": {
+      "title": "Gold Package",
+      "pricePrefix": "Starting from",
+      "price": "400",
+      "currency": "OMR",
+      "features": [
+        "Dynamic website (including CMS for content management)",
+        "Modern and attractive design",
+        "Home page with image slider, company intro, and featured products",
+        "About Us page",
+        "Contact Us page with form",
+        "Responsive design for all devices",
+        "Payment gateway integration (e.g., from Amana.net)",
+        "Bilingual (Arabic and English)",
+        "Modern section design",
+        "Domain name registration (.com, .net, .org)",
+        "Hosting plan (official email) on US servers",
+        "SSL certificate",
+        "Android web application",
+        "Email notification system for customer and merchant",
+        "WhatsApp integration (programming & activation fees only)",
+        "Aramex integration",
+        "International shipping",
+        "Currency conversion",
+        "1 year of technical support"
+      ],
+      "deliveryTime": "Website design within 1 month from receiving complete data.",
+      "renewalInfo": "Annual renewal (hosting and domain):",
+      "renewalPrice": "65",
+      "renewalResponsibility": "(responsibility of the store owner)",
+      "chooseButton": "Choose Gold"
+    }
+  },
+  "rfidSolutions": {
+    "heroTitle": "Streamline Your Operations with Intaj Stars RFID Solutions",
+    "heroDescription": "Unlock efficiency, visibility, and security with our cutting-edge RFID technology implementation and integration services.",
+    "inventoryTitle": "Inventory Management & Asset Tracking",
+    "inventoryDescription": "Gain real-time visibility into your stock levels and asset locations. Reduce manual errors, prevent loss, and optimize your supply chain.",
+    "inventoryAltText": "RFID reader scanning boxes in a warehouse for inventory tracking.",
+    "inventoryList": [
+      "Real-time Item Identification & Tracking",
+      "Automated Stock Counts & Audits",
+      "Reduced Shrinkage & Loss Prevention",
+      "Improved Warehouse Efficiency",
+      "Enhanced Asset Lifecycle Management",
+      "Seamless Integration with ERP/WMS",
+      "Accurate Data for Forecasting"
+    ],
+    "accessControlTitle": "Access Control & Security Solutions",
+    "accessControlDescription": "Secure your premises and sensitive areas with robust RFID-based access control systems. Monitor entry/exit points and enhance overall security.",
+    "accessControlAltText": "Person using an RFID card for access control at a door reader.",
+    "accessControlList": [
+      "Secure & Contactless Entry",
+      "Granular Access Permissions",
+      "Real-time Monitoring & Logging",
+      "Integration with Security Systems (CCTV, Alarms)",
+      "Personnel & Visitor Management",
+      "Time & Attendance Tracking Capabilities"
+    ],
+    "componentsTitle": "Key Components We Utilize",
+    "processTitle": "Our Implementation Process",
+    "processSteps": [
+      {
+        "term": "Needs Assessment & Consultation",
+        "desc": "Understanding your specific challenges, operational environment, and goals."
+      },
+      {
+        "term": "System Design & Architecture",
+        "desc": "Planning the optimal RFID setup, including hardware placement, tag selection, and software requirements."
+      },
+      {
+        "term": "Hardware Selection & Procurement",
+        "desc": "Sourcing the most suitable tags, readers, and antennas for your application."
+      },
+      {
+        "term": "Software Development & Configuration",
+        "desc": "Customizing middleware, integrating with existing systems (ERP, WMS, etc.), and setting up dashboards."
+      },
+      {
+        "term": "Installation & Site Survey",
+        "desc": "Professional installation of hardware and performing site surveys to ensure optimal read ranges and coverage."
+      },
+      {
+        "term": "System Integration & Testing",
+        "desc": "Ensuring all components work together seamlessly and validating performance against requirements."
+      },
+      {
+        "term": "Training & Handover",
+        "desc": "Equipping your team with the knowledge to operate and manage the new RFID system effectively."
+      },
+      {
+        "term": "Ongoing Support & Maintenance",
+        "desc": "Providing continuous support, updates, and optimization for long-term system success."
+      }
+    ]
+  },
+  "posPage": {
+    "serviceTitle": "Revolutionize Your Business with Our POS System",
+    "serviceDescription": "Our Point of Sale (POS) system is designed to streamline your sales process, manage inventory efficiently, and enhance customer experience. Discover how our POS solution can help you grow your business."
+  },
+  "posServiceComponent": {
+    "altFeature1": "POS hardware showing transaction screen",
+    "altFeature2": "Customer using contactless payment at POS terminal",
+    "altFeature3": "Receipt printer printing sales summary"
+  },
+  "warehouseManagementSystem": {
+    "heroTitle": "Streamline Your Warehouse Operations",
+    "heroDescription": "Leveraging intelligent Warehouse Management Systems for efficient inventory control, order fulfillment, and enhanced supply chain visibility.",
+    "modulesTitle": "Core WMS Modules & Features",
+    "moduleWMS": "WMS (Warehouse Management System)",
+    "moduleReceiving": "Receiving Module",
+    "modulePutaway": "Putaway Module",
+    "moduleInventory": "Inventory Management",
+    "moduleDispatch": "Issuing & Dispatch",
+    "moduleIntegration": "Requisition & Procurement Integration",
+    "moduleReports": "Reports & Analytics",
+    "descriptionWMS": "Central system for optimizing all warehouse activities.",
+    "descriptionReceiving": "Manages incoming goods, verification, and initial stock entry.",
+    "descriptionPutaway": "Directs goods to optimal storage locations.",
+    "descriptionInventory": "Real-time tracking of stock levels across locations.",
+    "descriptionDispatch": "Streamlines order picking, packing, and shipping.",
+    "descriptionIntegration": "Connects WMS with ERP and procurement systems.",
+    "descriptionReports": "Provides insights into warehouse performance and efficiency."
+  },
+  "contactUsPage": {
+    "mainTitle": "Contact Us",
+    "formTitle": "Send us a message",
+    "labelName": "Your Name",
+    "placeholderName": "Enter your name",
+    "labelEmail": "Your Email",
+    "placeholderEmail": "Enter your email address",
+    "labelMessage": "Message",
+    "placeholderMessage": "Enter your message here...",
+    "buttonSend": "Send",
+    "infoTitle": "Contact Information",
+    "addressLine1": "123 Main Street",
+    "addressLine2": "Halban, J25G+8H",
+    "addressLine3": "Oman",
+    "emailLabel": "Email Address",
+    "phoneLabel": "Phone Number"
+  },
+  "footer": {
+    "companyName": "Intaj Stars",
+    "companyDescription": "Innovative technology solutions for healthcare, e-commerce, accounting, and beyond.",
+    "instagramAriaLabel": "Instagram",
+    "servicesTitle": "Services",
+    "serviceEcommerce": "E-commerce Store",
+    "serviceWebDev": "Web Development",
+    "serviceMobileApp": "Mobile App",
+    "servicePOS": "POS Hardware and Software",
+    "serviceRFID": "RFID Solutions",
+    "quickLinksTitle": "Quick Links",
+    "linkHome": "Home",
+    "linkOurServices": "Our Services",
+    "linkContactUs": "Contact Us",
+    "contactTitle": "Contact",
+    "address": "123 Main Street<br />Halban, J25G+8H<br />Oman",
+    "copyright": "© {year} Intaj Stars. All rights reserved."
+  }
+}
