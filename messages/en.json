@@ -207,7 +207,7 @@
     "bronzePackage": {
       "title": "Bronze Package",
       "pricePrefix": "Starting from",
-      "price": "250",
+      "price": "95",
       "currency": "OMR",
       "features": [
         "Dynamic website (including CMS for content management)",
@@ -239,7 +239,7 @@
     "silverPackage": {
       "title": "Silver Package",
       "pricePrefix": "Starting from",
-      "price": "350",
+      "price": "150",
       "currency": "OMR",
       "features": [
         "Dynamic website (including CMS for content management)",
@@ -271,7 +271,7 @@
     "goldPackage": {
       "title": "Gold Package",
       "pricePrefix": "Starting from",
-      "price": "400",
+      "price": "250",
       "currency": "OMR",
       "features": [
         "Dynamic website (including CMS for content management)",
