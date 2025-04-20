@@ -53,22 +53,7 @@ const HeroSection = () => {
       </div>
       <HeroParticle />
 
-      {/* <div className='absolute bottom-0 w-full'>
-        <Marquee pauseOnHover
-          className='[--duration:20s] max-w-7xl mx-auto'>
-          <h1>{t('marqueeItem1')}</h1>
-          <h1>{t('marqueeItem2')}</h1>
-          <h1>{t('marqueeItem3')}</h1>
-          <h1>{t('marqueeItem4')}</h1>
-          <h1>{t('marqueeItem5')}</h1>
-          <h1>{t('marqueeItem6')}</h1>
-          <h1>{t('marqueeItem7')}</h1>
-          <h1>{t('marqueeItem8')}</h1>
-          <h1>{t('marqueeItem9')}</h1>
-          <h1>{t('marqueeItem10')}</h1>
-          <h1>{t('marqueeItem11')}</h1>
-        </Marquee>
-      </div> */}
+
     </div>
   )
 }
