@@ -18,11 +18,11 @@ const HeroSection = () => {
     <div className='relative h-screen'>
       <div className='absolute top-0 w-full h-screen z-10 flex items-center justify-center flex-col space-y-5'>
         <Image
-          src="/business-management.png"
+          src="/header.png"
           alt="Laptop and Notebook"
           className="rounded-2xl shadow-xl object-cover"
-          height={400} // Increased height
-          width={600} // Increased width
+          height={240} // Increased height
+          width={240} // Increased width
           priority
           style={{ objectFit: 'cover' }}
         />
