@@ -58,7 +58,10 @@
   },
   "ourServices": {
     "heading": "Our Services",
-    "moreButton": "More",
+    "subtitle": "Comprehensive digital solutions built for your success",
+    "badge": "What We Offer",
+    "moreButton": "Learn More",
+    "viewAll": "View All Services",
     "loading": "Loading",
     "fetchError": "Error loading services"
   },

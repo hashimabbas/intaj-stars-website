@@ -1,81 +1,102 @@
-// app/services/[id]/page.tsx
-"use client";
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import { useLocale } from "next-intl"
+import { useParams } from "next/navigation"
+import { servicesData } from "@/lib/services-data"
+import { ArrowLeft, ArrowRight, Home } from "lucide-react"
 
-import Image from 'next/image';
-import { notFound } from 'next/navigation';
-import { useTheme } from 'next-themes';
-import { useState, useEffect } from 'react';
+export default function ServiceDetailPage() {
+  const locale = useLocale()
+  const isRtl = locale === "ar"
+  const params = useParams()
+  const id = params?.id as string
 
-interface ServiceProps {
-  _id: string;
-  imageSrc: string;
-  title: string;
-  description: string;
-  link: string;
-}
-
-interface Props {
-  params: { id: string };
-}
-
-const ServiceDetailPage = ({ params }: Props) => {
-  const { id } = params;
-  const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const [service, setService] = useState<ServiceProps | null>(null);
-
-  useEffect(() => {
-    setMounted(true);
-
-    const fetchService = async () => {
-      try {
-        const response = await fetch(`/api/services/${id}`);
-        if (!response.ok) {
-          if (response.status === 404) {
-            notFound(); // Trigger Next.js notFound
-          }
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setService(data.service);
-      } catch (error) {
-        console.error("Failed to fetch service:", error);
-      }
-    };
-
-    fetchService();
-  }, [id]);
-
-  if (!mounted) {
-    return null;
-  }
+  const service = servicesData.find((s) => s.id === id)
+  const BackIcon = isRtl ? ArrowRight : ArrowLeft
 
   if (!service) {
-    return <div>Loading...</div>; // Or a more informative loading state
-  }
-
-  return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
-      <div className="container mx-auto px-4">
-        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-          <Image
-            src={service.imageSrc}
-            alt={service.title}
-            width={1200}
-            height={800}
-            className="object-cover w-full h-96"
-          />
-          <div className="p-8">
-            <h1 className="text-3xl font-extrabold text-gray-900 dark:text-gray-100 mb-4">{service.title}</h1>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">{service.description}</p>
-            <a href={service.link} className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-200">
-              Learn More
-            </a>
-          </div>
+    return (
+      <div
+        className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900"
+        dir={isRtl ? "rtl" : "ltr"}
+      >
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            {isRtl ? "الخدمة غير موجودة" : "Service Not Found"}
+          </h1>
+          <Link
+            href={`/${locale}/pages/services`}
+            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            <Home className="w-5 h-5" />
+            {isRtl ? "العودة إلى الخدمات" : "Back to Services"}
+          </Link>
         </div>
       </div>
-    </section>
-  );
-};
+    )
+  }
 
-export default ServiceDetailPage;
+  const displayTitle = isRtl ? service.ar_title : service.title
+  const displayDescription = isRtl ? service.ar_description : service.description
+
+  return (
+    <div dir={isRtl ? "rtl" : "ltr"}>
+      <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
+        <Image
+          src={service.imageSrc}
+          alt={displayTitle}
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+
+        <div className="absolute bottom-0 left-0 right-0 container mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+          <Link
+            href={`/${locale}/pages/services`}
+            className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors"
+          >
+            <BackIcon className="w-4 h-4" />
+            {isRtl ? "العودة إلى الخدمات" : "Back to Services"}
+          </Link>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
+            {displayTitle}
+          </h1>
+          <p className="text-lg sm:text-xl text-white/80 max-w-3xl">
+            {displayDescription}
+          </p>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 sm:p-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              {isRtl ? "حول هذه الخدمة" : "About This Service"}
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg mb-8">
+              {displayDescription}
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href={`/${locale}/contact`}
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:-translate-y-1"
+              >
+                {isRtl ? "تواصل معنا" : "Contact Us"}
+                <BackIcon className="w-5 h-5" />
+              </Link>
+              <Link
+                href={`/${locale}/pages/services`}
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
+              >
+                {isRtl ? "جميع الخدمات" : "All Services"}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
