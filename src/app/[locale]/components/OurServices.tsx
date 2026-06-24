@@ -1,143 +1,97 @@
 "use client"
-// components/OurServices.tsx
-import Image from 'next/image';
-import { useTheme } from 'next-themes';
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { useLocale, useTranslations } from 'next-intl'; // Import next-intl hooks
-
-interface ServiceProps {
-  _id: string;
-  imageSrc: string;
-  title: string;        // English title
-  ar_title: string;     // Arabic title
-  description: string;  // English description
-  ar_description: string; // Arabic description
-  link: string;
-}
-
-// Reverted ServiceCard styling, kept translations
-const ServiceCard: React.FC<ServiceProps> = ({
-  imageSrc,
-  title,
-  ar_title,
-  description,
-  ar_description,
-  link,
-  _id
-}) => {
-  const locale = useLocale(); // Get current locale
-  const t = useTranslations('ourServices'); // Get translations for the button
-
-  // Determine which title and description to display based on locale
-  const displayTitle = locale === 'ar' ? ar_title : title;
-  const displayDescription = locale === 'ar' ? ar_description : description;
-
-  return (
-    // Reverted styling closer to original
-    <div className="bg-white mt-24 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
-      <Image
-        src={imageSrc}
-        alt={displayTitle} // Use locale-specific title for alt text
-        width={600} // Using original width/height props
-        height={400}
-        className="object-cover w-full h-48" // Using original className
-      />
-      <div className="p-6"> {/* Removed flex styling */}
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">{displayTitle}</h3>
-        <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">{displayDescription}</p> {/* Removed flex-grow */}
-
-        {/* Conditional "More" Link/Button */}
-        {link && link !== '#' ? ( // Check if link is valid and not just '#'
-          <Link
-            href={`/${locale}${link.startsWith('/') ? link : '/' + link}`} // Ensure leading slash and add locale
-            className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-200" // Removed mt-auto, text-center
-          >
-            {t('moreButton')} {/* Translate button text */}
-          </Link>
-        ) : (
-          // If no link, render nothing or potentially a disabled button from original
-          "" // Render nothing as per original commented-out section
-          // <button disabled className="inline-block bg-gray-400 text-white font-bold py-2 px-4 rounded cursor-not-allowed">
-          //   {t('moreButton')}
-          // </button>
-        )}
-      </div>
-    </div>
-  );
-};
+import Image from "next/image"
+import Link from "next/link"
+import { useLocale, useTranslations } from "next-intl"
+import { servicesData } from "@/lib/services-data"
+import { ArrowLeft, ArrowRight } from "lucide-react"
 
 export function OurServices() {
-  const t = useTranslations('ourServices'); // Initialize translations
-  const locale = useLocale(); // Get current locale
-  const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const [services, setServices] = useState<ServiceProps[]>([]);
-  const [loading, setLoading] = useState(true); // Add loading state
-  const [error, setError] = useState<string | null>(null); // Add error state
-
-  useEffect(() => {
-    setMounted(true);
-
-    const fetchServices = async () => {
-      setLoading(true); // Start loading
-      setError(null); // Reset error
-      try {
-        const response = await fetch('/api/services'); // Ensure API route is correct
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        if (!data.services || !Array.isArray(data.services)) {
-          console.error("API response is missing 'services' array:", data);
-          throw new Error("Invalid data format from API");
-        }
-        setServices(data.services);
-      } catch (error: any) {
-        console.error("Failed to fetch services:", error);
-        setError(error.message || "Failed to load services."); // Set error message
-      } finally {
-        setLoading(false); // Stop loading regardless of outcome
-      }
-    };
-
-    fetchServices();
-  }, []); // Run only on mount
-
-  if (!mounted) {
-    // Avoid rendering potentially incorrect server-side state before hydration
-    return null;
-  }
+  const t = useTranslations("ourServices")
+  const locale = useLocale()
+  const isRtl = locale === "ar"
+  const topServices = servicesData.slice(0, 4)
+  const ArrowIcon = isRtl ? ArrowLeft : ArrowRight
 
   return (
-    // Add dir for RTL support
-    <section className="py-16 bg-gray-100 dark:bg-gray-900 transition-colors duration-300" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-gray-100 text-center mb-8">
-          {t('heading')} {/* Translate section heading */}
-        </h2>
+    <section
+      className="relative py-20 overflow-hidden"
+      dir={isRtl ? "rtl" : "ltr"}
+    >
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900" />
 
-        {loading && ( // Display loading indicator
-          <div className="text-center text-gray-600 dark:text-gray-400">
-            {t('loading')}...
-          </div>
-        )}
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 mb-4">
+            {t("badge") || "Our Services"}
+          </span>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            {t("heading")}
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            {t("subtitle") || "Comprehensive digital solutions built for your success"}
+          </p>
+        </div>
 
-        {error && ( // Display error message
-          <div className="text-center text-red-600 dark:text-red-400">
-            {t('fetchError')}: {error}
-          </div>
-        )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {topServices.map((service) => {
+            const displayTitle = isRtl ? service.ar_title : service.title
+            const displayDescription = isRtl ? service.ar_description : service.description
+            const isComingSoon = service.href === "#"
 
-        {!loading && !error && ( // Display services grid only when loaded and no error
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
-              // Pass all service props down, including _id and both language fields
-              <ServiceCard key={service._id} {...service} />
-            ))}
-          </div>
-        )}
+            const card = (
+              <div className="group relative flex flex-col bg-white dark:bg-gray-800/80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <div className="relative h-52 overflow-hidden">
+                  <Image
+                    src={service.imageSrc}
+                    alt={displayTitle}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  {isComingSoon && (
+                    <span className="absolute top-3 right-3 z-10 px-3 py-1 rounded-full text-xs font-semibold bg-amber-400 text-amber-900 shadow-md">
+                      {isRtl ? "قريباً" : "Coming Soon"}
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex flex-col flex-1 p-5">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {displayTitle}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-2 mb-4 flex-1">
+                    {displayDescription}
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 group-hover:gap-3 transition-all">
+                    {t("moreButton") || "Learn More"}
+                    <ArrowIcon className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+                  </span>
+                </div>
+              </div>
+            )
+
+            if (isComingSoon) {
+              return <div key={service.id}>{card}</div>
+            }
+
+            return (
+              <Link key={service.id} href={`/${locale}${service.href}`}>
+                {card}
+              </Link>
+            )
+          })}
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <Link
+            href={`/${locale}/pages/services`}
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-lg shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:-translate-y-1"
+          >
+            {t("viewAll") || "View All Services"}
+            <ArrowIcon className="w-5 h-5" />
+          </Link>
+        </div>
       </div>
     </section>
-  );
+  )
 }
