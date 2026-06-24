@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412450"
+  },
+  "imageSrc": "/services/medical-8990009_1280.jpg",
+  "title": "Specialized Medical Software",
+  "description": "Intaj Stars develops custom medical software solutions tailored to specific needs, improving patient care and operational efficiency for hospitals and clinics.",
+  "link": "/pages/services/specialized-medical-software",
+  "ar_description": "تقوم نجوم الإنتاج بتطوير حلول برمجيات طبية مخصصة مصممة لتلبية احتياجات محددة، مما يحسن رعاية المرضى والكفاءة التشغيلية للمستشفيات والعيادات.",
+  "ar_title": "برامج طبية متخصصة"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412451"
+  },
+  "imageSrc": "/services/Medical-Device-Integration.jpg",
+  "title": "Medical Device Integration",
+  "description": "Seamlessly integrate medical devices with existing systems using Intaj Stars technology. Our solutions ensure accurate data capture and enhance real-time monitoring for improved clinical decision-making.",
+  "link": "#",
+  "ar_description": "يمكنك دمج الأجهزة الطبية بسلاسة مع الأنظمة الحالية باستخدام تقنية نجوم الإنتاج. تضمن حلولنا التقاط بيانات دقيقة وتعزيز المراقبة في الوقت الفعلي لتحسين عملية اتخاذ القرارات السريرية.",
+  "ar_title": "تكامل الأجهزة الطبية"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412452"
+  },
+  "imageSrc": "/services/Analytics-Platform.jpg",
+  "title": "Analytics Platform",
+  "description": "Empower your organization with Intaj Stars' powerful analytics platform. Gain insights from your data to optimize performance, identify trends, and make data-driven strategic decisions.",
+  "link": "#",
+  "ar_description": "قم بتمكين مؤسستك من خلال منصة التحليلات القوية من نجوم الإنتاج. اكتسب رؤى من بياناتك لتحسين الأداء وتحديد الاتجاهات واتخاذ قرارات استراتيجية قائمة على البيانات.",
+  "ar_title": "منصة تحليلية"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412453"
+  },
+  "imageSrc": "/services/AI-Software-Development.jpg",
+  "title": "AI Software Development",
+  "description": "Intaj Stars specializes in AI software development, offering cutting-edge solutions for automation, predictive analysis, and intelligent decision support across various industries.",
+  "link": "#",
+  "ar_description": "تتخصص نجوم الإنتاج في تطوير برامج الذكاء الاصطناعي، وتقدم حلولاً متطورة للأتمتة والتحليل التنبؤي ودعم القرارات الذكية عبر مختلف الصناعات.",
+  "ar_title": "تطوير برامج الذكاء الاصطناعي"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412454"
+  },
+  "imageSrc": "/services/ERP-Systems.jpg",
+  "title": "ERP Systems",
+  "description": "Streamline your business processes with Intaj Stars' ERP systems. We deliver customized solutions to manage resources, improve collaboration, and boost overall productivity.",
+  "link": "#",
+  "ar_description": "قم بتبسيط عمليات عملك باستخدام أنظمة تخطيط موارد المؤسسات (ERP) من نجوم الإنتاج. نقدم حلولاً مخصصة لإدارة الموارد وتحسين التعاون وزيادة الإنتاجية الإجمالية.",
+  "ar_title": "أنظمة تخطيط موارد المؤسسات (ERP)"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412455"
+  },
+  "imageSrc": "/services/Payment-Solutions.png",
+  "title": "Payment Solutions",
+  "description": "Intaj Stars provides secure and reliable payment solutions tailored to your specific business needs. Enhance customer experience and optimize revenue streams with our advanced payment processing technologies.",
+  "link": "#",
+  "ar_description": "توفر نجوم الإنتاج حلول دفع آمنة وموثوقة مصممة خصيصًا لاحتياجات عملك المحددة. عزز تجربة العملاء وحسّن تدفقات الإيرادات من خلال تقنيات معالجة الدفع المتقدمة لدينا.",
+  "ar_title": "حلول الدفع"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412456"
+  },
+  "imageSrc": "/services/E-commerce-Store.png",
+  "title": "E-commerce Store",
+  "description": "Launch your online business with Intaj Stars' e-commerce store development services. We create customizable, scalable, and secure e-commerce platforms that drive sales and enhance customer experience.",
+  "link": "/pages/services/e-commerce",
+  "ar_description": "أطلق عملك عبر الإنترنت مع خدمات تطوير متاجر التجارة الإلكترونية من نجوم الإنتاج. نقوم بإنشاء منصات تجارة إلكترونية قابلة للتخصيص وقابلة للتطوير وآمنة تدفع المبيعات وتعزز تجربة العملاء.",
+  "ar_title": "متجر التجارة الإلكترونية"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412457"
+  },
+  "imageSrc": "/services/Web_Development.png",
+  "title": "Web Development",
+  "description": "Intaj Stars leverages the latest web technologies to build high-performing, user-friendly websites that deliver results. From concept to launch, we provide comprehensive web development services that meet your specific business needs.",
+  "link": "/pages/services/web-development",
+  "ar_description": "تستفيد نجوم الإنتاج من أحدث تقنيات الويب لبناء مواقع ويب عالية الأداء وسهلة الاستخدام تحقق النتائج. من الفكرة إلى الإطلاق، نقدم خدمات تطوير ويب شاملة تلبي احتياجات عملك المحددة.",
+  "ar_title": "تطوير الويب"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412458"
+  },
+  "imageSrc": "/services/Mobile-App.png",
+  "title": "Mobile App",
+  "description": "Reach your customers on the go with Intaj Stars' mobile app development services. We create engaging, user-friendly apps that provide seamless access to your products and services.",
+  "link": "/pages/services/mobile-app-development",
+  "ar_description": "تواصل مع عملائك أثناء تنقلهم مع خدمات تطوير تطبيقات الهاتف المحمول من نجوم الإنتاج. نقوم بإنشاء تطبيقات جذابة وسهلة الاستخدام توفر وصولاً سلسًا إلى منتجاتك وخدماتك.",
+  "ar_title": "تطبيق الهاتف المحمول"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f43750412459"
+  },
+  "imageSrc": "/services/POS-Hardware-and-Software.jpg",
+  "title": "POS Hardware and Software",
+  "description": "Optimize your retail operations with Intaj Stars' POS hardware and software solutions. We offer integrated systems that streamline transactions, manage inventory, and enhance customer service.",
+  "link": "/pages/services/POS",
+  "ar_description": "قم بتحسين عمليات البيع بالتجزئة الخاصة بك باستخدام حلول أجهزة وبرامج نقاط البيع من نجوم الإنتاج. نقدم أنظمة متكاملة تبسط المعاملات وتدير المخزون وتعزز خدمة العملاء.",
+  "ar_title": "أجهزة وبرامج نقاط البيع"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f4375041245a"
+  },
+  "imageSrc": "/services/RFID-Solutions.png",
+  "title": "RFID Solutions",
+  "description": "Improve tracking and management with Intaj Stars' RFID solutions. Track assets, manage inventory, and reduce loss with our advanced RFID technology.",
+  "link": "/pages/services/RFID-solutions",
+  "ar_description": "قم بتحسين التتبع والإدارة باستخدام حلول RFID من نجوم الإنتاج. تتبع الأصول، وأدر المخزون، وقلل الخسائر باستخدام تقنية RFID المتقدمة لدينا.",
+  "ar_title": "حلول تحديد الهوية بموجات الراديو (RFID)"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f4375041245b"
+  },
+  "imageSrc": "/services/IoT-Device.jpg",
+  "title": "IoT Device",
+  "description": "Connect your world with Intaj Stars' IoT device solutions. We design and deploy connected devices that collect data, automate processes, and improve efficiency across various industries.",
+  "link": "#",
+  "ar_description": "قم بتوصيل عالمك بحلول أجهزة إنترنت الأشياء (IoT) من نجوم الإنتاج. نقوم بتصميم ونشر أجهزة متصلة تجمع البيانات وتؤتمت العمليات وتحسن الكفاءة عبر مختلف الصناعات.",
+  "ar_title": "أجهزة إنترنت الأشياء (IoT)"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f4375041245c"
+  },
+  "imageSrc": "/services/Chatbot.png",
+  "title": "Chatbot",
+  "description": "Enhance customer engagement with Intaj Stars' intelligent chatbot solutions. Our chatbots provide instant support, answer FAQs, and automate routine tasks, improving customer satisfaction.",
+  "link": "#",
+  "ar_description": "عزز تفاعل العملاء مع حلول روبوتات الدردشة الذكية من نجوم الإنتاج. توفر روبوتات الدردشة لدينا دعمًا فوريًا، وتجيب على الأسئلة الشائعة، وتؤتمت المهام الروتينية، مما يحسن رضا العملاء.",
+  "ar_title": "روبوت الدردشة"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f4375041245d"
+  },
+  "imageSrc": "/services/Customer-Support-Software.png",
+  "title": "Customer Support Software",
+  "description": "Improve customer satisfaction with Intaj Stars' customer support software solutions. We provide tools for managing inquiries, tracking issues, and delivering personalized support experiences.",
+  "link": "#",
+  "ar_description": "قم بتحسين رضا العملاء باستخدام حلول برامج دعم العملاء من نجوم الإنتاج. نوفر أدوات لإدارة الاستفسارات وتتبع المشكلات وتقديم تجارب دعم مخصصة.",
+  "ar_title": "برنامج دعم العملاء"
+},
+{
+  "_id": {
+    "$oid": "67bd7e08a878f4375041245e"
+  },
+  "imageSrc": "/services/Accounting_System.jpg",
+  "title": "Accounting System",
+  "description": "Intaj Stars delivers a robust and secure Accounting System as a Service (ASaaS) platform designed to empower your business with accurate, accessible, and affordable financial management tools. Our cloud-based solution eliminates the need for costly on-premise software and hardware, freeing you from the complexities of IT management.",
+  "link": "#",
+  "ar_description": "تقدم نجوم الإنتاج منصة نظام محاسبي كخدمة (ASaaS) قوية وآمنة مصممة لتمكين عملك بأدوات إدارة مالية دقيقة وسهلة الوصول وميسورة التكلفة. يلغي حلنا المستند إلى السحابة الحاجة إلى البرامج والأجهزة المكلفة داخل الشركة، مما يحررك من تعقيدات إدارة تكنولوجيا المعلومات.",
+  "ar_title": "نظام محاسبي"
+},
+{
+  "_id": {
+    "$oid": "680248043148ccaed588f75e"
+  },
+  "imageSrc": "/services/warehouse.jpg",
+  "title": "Warehouse Management System (WMS)",
+  "description": "Optimize overall warehouse operations with a centralized WMS. Gain real-time visibility, improve inventory accuracy, and streamline workflows from receiving to dispatch.",
+  "link": "/pages/services/warehouse-management-system",
+  "ar_description": "قم بتحسين عمليات المستودعات الشاملة باستخدام نظام إدارة المستودعات المركزي. احصل على رؤية فورية، وحسّن دقة المخزون، وقم بتبسيط تدفقات العمل من الاستلام إلى الإرسال.",
+  "ar_title": "نظام إدارة المستودعات (WMS)"
+}]

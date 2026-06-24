@@ -6,6 +6,7 @@ import VisionMission from './components/VisionMission';
 import { ValuesSection } from './components/ValuesSection';
 import OurCustomers from './components/OurCustomers';
 import { OurServices } from './components/OurServices';
+import { MorphoSCTHighlights } from './components/MorphoSCTHighlights';
 
 
 
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <ValuesSection />
       <OurCustomers />
       <OurServices />
+      <MorphoSCTHighlights />
     </div>
   );
 };

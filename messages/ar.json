@@ -386,6 +386,12 @@
     "descriptionIntegration": "ربط نظام إدارة المستودعات بأنظمة تخطيط موارد المؤسسة والمشتريات.",
     "descriptionReports": "يوفر رؤى حول أداء وكفاءة المستودعات."
   },
+  "morphoSCTHighlights": {
+    "heading": "أبرز حلول Morpho SCT",
+    "moreButton": "المزيد",
+    "loading": "جار التحميل",
+    "fetchError": "خطأ في تحميل الأبرز"
+  },
   "contactUsPage": {
     "mainTitle": "اتصل بنا",
     "formTitle": "أرسل لنا رسالة",

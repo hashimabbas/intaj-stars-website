@@ -392,6 +392,12 @@
     "descriptionIntegration": "Connects WMS with ERP and procurement systems.",
     "descriptionReports": "Provides insights into warehouse performance and efficiency."
   },
+  "morphoSCTHighlights": {
+    "heading": "Morpho SCT Highlights",
+    "moreButton": "More",
+    "loading": "Loading",
+    "fetchError": "Error loading highlights"
+  },
   "contactUsPage": {
     "mainTitle": "Contact Us",
     "formTitle": "Send us a message",
