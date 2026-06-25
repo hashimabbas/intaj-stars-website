@@ -14,11 +14,11 @@ export const servicesData: ServiceItem[] = [
     title: 'Healthcare Systems',
     ar_title: 'النظم الصحية',
     description:
-      'Comprehensive healthcare management solutions including HIS, EMR/EHR, and medical device integration.',
+      'Specialized software solutions for laboratories, radiology, pharmacy, and AI-powered diagnostics.',
     ar_description:
-      'حلول متكاملة لإدارة المنشآت الصحية تشمل نظم المعلومات الصحية والسجلات الطبية الإلكترونية وربط الأجهزة الطبية.',
+      'حلول برمجية متخصصة للمختبرات والأشعة والصيدلة والتشخيص بالذكاء الاصطناعي.',
     imageSrc: '/services/medical-8990009_1280.jpg',
-    href: '#',
+    href: '/pages/services/healthcare-systems',
   },
   {
     id: 'e-commerce',
@@ -83,16 +83,5 @@ export const servicesData: ServiceItem[] = [
       'أنظمة RFID متقدمة لتتبع المخزون وإدارة الأصول والتحكم في الوصول.',
     imageSrc: '/services/RFID-Solutions.png',
     href: '/pages/services/RFID-solutions',
-  },
-  {
-    id: 'specialized-medical-software',
-    title: 'Specialized Medical Software',
-    ar_title: 'برامج طبية متخصصة',
-    description:
-      'Specialized software solutions for laboratories, radiology, pharmacy, and AI-powered diagnostics.',
-    ar_description:
-      'حلول برمجية متخصصة للمختبرات والأشعة والصيدلة والتشخيص بالذكاء الاصطناعي.',
-    imageSrc: '/services/Medical-Device-Integration.jpg',
-    href: '/pages/services/specialized-medical-software',
   },
 ]

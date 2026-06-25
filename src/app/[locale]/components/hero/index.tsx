@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation'; // Correct import
 
-const HeroSection = () => {
+const  HeroSection = () => {
   const t = useTranslations('heroSection'); // Changed namespace to 'heroSection'
   const router = useRouter();
   const locale = useLocale();

@@ -8,44 +8,82 @@ import { cn } from '@/lib/utils'; // Import cn for conditional classes
 const ContactUs = () => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const t = useTranslations('contactUsPage'); // Initialize translations
-  const locale = useLocale(); // Get current locale
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+  const t = useTranslations('contactUsPage');
+  const locale = useLocale();
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError("");
+    setSuccess(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (!res.ok) throw new Error("Failed to send message");
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSuccess(true);
+    } catch (err: any) {
+      setError(err.message || "Something went wrong");
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   if (!mounted) {
     return null;
   }
 
   return (
-    // Add dir attribute for RTL support
     <section dir={locale === 'ar' ? 'rtl' : 'ltr'} className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <h1 className="text-4xl text-center p-10 lg:text-5xl font-extrabold text-gray-900 dark:text-gray-100 mb-4">
-        {t('mainTitle')} {/* Translated */}
+        {t('mainTitle')}
       </h1>
       <div className="container mx-auto px-4">
-        <div className="lg:flex lg:items-start lg:justify-between lg:gap-12"> {/* Use items-start for better alignment */}
+        <div className="lg:flex lg:items-start lg:justify-between lg:gap-12">
 
-          {/* Left Side (Contact Form) */}
           <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <div className="bg-white dark:bg-gray-800 shadow-xl rounded-lg p-8"> {/* Enhanced shadow */}
+            <div className="bg-white dark:bg-gray-800 shadow-xl rounded-lg p-8">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-6 text-center">
-                {t('formTitle')} {/* Translated */}
+                {t('formTitle')}
               </h2>
-              {/* Placeholder for contact form - Replace with your actual form */}
-              <form onSubmit={(e) => e.preventDefault()}> {/* Add basic submit prevention */}
+              {success && (
+                <div className="mb-4 p-3 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-md text-center">
+                  Message sent successfully!
+                </div>
+              )}
+              {error && (
+                <div className="mb-4 p-3 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 rounded-md text-center">
+                  {error}
+                </div>
+              )}
+              <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">
-                    {t('labelName')} {/* Translated */}
+                    {t('labelName')}
                   </label>
                   <input
                     type="text"
                     id="name"
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600" // Added focus ring
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600"
                     placeholder={t('placeholderName')}
-                    required // Add basic required validation
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -55,6 +93,8 @@ const ContactUs = () => {
                   <input
                     type="email"
                     id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600"
                     placeholder={t('placeholderEmail')}
                     required
@@ -67,6 +107,8 @@ const ContactUs = () => {
                   <textarea
                     id="message"
                     rows={4}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600"
                     placeholder={t('placeholderMessage')}
                     required
@@ -74,10 +116,11 @@ const ContactUs = () => {
                 </div>
                 <div className="flex items-center justify-center">
                   <button
-                    className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition-colors duration-200"
+                    className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition-colors duration-200 disabled:opacity-50"
                     type="submit"
+                    disabled={submitting}
                   >
-                    {t('buttonSend')} {/* Translated */}
+                    {submitting ? "Sending..." : t('buttonSend')}
                   </button>
                 </div>
               </form>

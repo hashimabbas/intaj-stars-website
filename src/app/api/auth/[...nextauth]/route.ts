@@ -1,15 +1,37 @@
 // app/api/auth/[...nextauth]/route.ts
-import NextAuth from "next-auth";
+import NextAuth, { AuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import CredentialsProvider from "next-auth/providers/credentials";
 
-const authOptions = {
+const authOptions: AuthOptions = {
   providers: [
+    CredentialsProvider({
+      name: "credentials",
+      credentials: {
+        email: { label: "Email", type: "email" },
+        password: { label: "Password", type: "password" },
+      },
+      async authorize(credentials) {
+        if (
+          credentials?.email === "hashim267303@gmail.com" &&
+          credentials?.password === "2673031992"
+        ) {
+          return { id: "1", name: "Admin", email: "hashim267303@gmail.com" }
+        }
+        return null
+      },
+    }),
     GoogleProvider({
-      clientId: process.env.GOOGLE_ID!, //The "!" asserts that the value isn't null or undefined.
+      clientId: process.env.GOOGLE_ID!,
       clientSecret: process.env.GOOGLE_SECRET!,
     }),
   ],
-  // Add other options like session, callbacks, etc. as needed
+  pages: {
+    signIn: "/login",
+  },
+  session: {
+    strategy: "jwt",
+  },
 };
 
 const handler = NextAuth(authOptions);

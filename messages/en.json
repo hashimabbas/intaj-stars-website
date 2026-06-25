@@ -22,7 +22,9 @@
     "contactUs": "Contact Us",
     "intajStarsLogo": "Intaj Stars Logo",
     "toggleMenu": "Toggle navigation menu",
-    "toggleDarkMode": "Toggle dark mode"
+    "toggleDarkMode": "Toggle dark mode",
+    "login": "Login",
+    "logout": "Logout"
   },
   "visionMission": {
     "heading": "About Our Company",
@@ -394,12 +396,6 @@
     "descriptionDispatch": "Streamlines order picking, packing, and shipping.",
     "descriptionIntegration": "Connects WMS with ERP and procurement systems.",
     "descriptionReports": "Provides insights into warehouse performance and efficiency."
-  },
-  "morphoSCTHighlights": {
-    "heading": "Morpho SCT Highlights",
-    "moreButton": "More",
-    "loading": "Loading",
-    "fetchError": "Error loading highlights"
   },
   "contactUsPage": {
     "mainTitle": "Contact Us",

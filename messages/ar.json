@@ -22,7 +22,9 @@
     "contactUs": "اتصل بنا",
     "intajStarsLogo": "شعار نجوم الإنتاج",
     "toggleMenu": "تبديل قائمة التنقل",
-    "toggleDarkMode": "تبديل الوضع الداكن"
+    "toggleDarkMode": "تبديل الوضع الداكن",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج"
   },
   "visionMission": {
     "heading": "عن شركتنا",
@@ -388,12 +390,6 @@
     "descriptionDispatch": "تبسيط عمليات انتقاء الطلبات والتعبئة والشحن.",
     "descriptionIntegration": "ربط نظام إدارة المستودعات بأنظمة تخطيط موارد المؤسسة والمشتريات.",
     "descriptionReports": "يوفر رؤى حول أداء وكفاءة المستودعات."
-  },
-  "morphoSCTHighlights": {
-    "heading": "أبرز حلول Morpho SCT",
-    "moreButton": "المزيد",
-    "loading": "جار التحميل",
-    "fetchError": "خطأ في تحميل الأبرز"
   },
   "contactUsPage": {
     "mainTitle": "اتصل بنا",

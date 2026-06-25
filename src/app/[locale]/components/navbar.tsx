@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation'; // Import usePathname
 import { useLocale, useTranslations } from 'next-intl';
 import LocaleSwitcher from './locale-switcher';
+import AuthButton from './AuthButton';
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -123,6 +124,7 @@ const Navbar = () => {
             )}
           </button>
           <LocaleSwitcher />
+          <AuthButton />
         </div>
       </div>
 
@@ -155,6 +157,7 @@ const Navbar = () => {
             )}
           </button>
           <LocaleSwitcher />
+          <AuthButton />
         </div>
       </div>
     </nav>
